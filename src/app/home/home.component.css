@@ -1,0 +1,157 @@
+
+
+
+
+.principal {
+    max-width: 1140;
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.marg{
+	padding: 1rem;
+}
+
+.pb-lg-25, .py-lg-25{
+	padding-bottom: 6rem !important;
+}
+
+.pt-lg-25, .py-lg-25{
+	padding-top: 10rem !important;
+}
+
+.p-lg-22{
+	padding: 3rem !important;
+	
+}
+
+.lh-lg-12{
+	line-height: 5rem !important;
+}
+
+.fs-lg-11{
+	font-size: 3rem !important;
+}
+
+.mb-10{
+	margin-bottom: 3rem !important;
+}
+
+.card{
+	border-width: 0;
+	box-shadow: 0px 12px 15px rgba(140, 152, 164, 0.1);
+}
+.cartao{
+	z-index:0;
+	font-family: Roboto, sans-serif !important;
+	font-weight: bold !important;
+	word-wrap: break-word;
+	border-radius: 0;
+}
+
+.bg-white-90 {
+	
+	background-color: rgba(239,251,255, .7) !important;
+	
+}
+
+.btn:not(:disabled):not(.disabled){
+	cursor: pointer;
+}
+
+.btn{
+	letter-spacing: .125rem;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: Arimo, sans-serif;
+	font-weight: 700;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid  transparent;
+}
+
+.btn-lg{
+	padding: 1.25rem 2.65rem;
+	font-size: .75rem;
+	line-height: 1.5;
+	border-radius: 0;
+}
+
+.btn-primary{
+	color: #fff;
+	background-color: #21ABA5;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition: .6s;
+	
+}
+
+.bg-secondary{
+	background-color: #17a2b8 !important;
+	
+}
+
+.transition-3d-hover {
+    transition: all 0.2s ease-in-out;
+}
+
+.secao{
+	
+	font-family: Roboto, sans-serif !important;
+	padding-top: 4rem !important;
+	padding-bottom: 100px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	margin-bottom: 60px;
+	position: relative;
+	background: #EFEFEF;
+}
+
+.segundo{
+	max-width: 1140px;
+}
+
+.segunda{
+	background-color: #EFEFEF;
+	margin-top: 20px;
+	padding-top: 50px;
+}
+
+
+
+.bd-placeholder-img{
+	text-anchor: middle;
+	padding-bottom: 6px;
+}
+
+.marketing .col-md-3{
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.btn-info{
+	text-transform: none !important;
+	font-weight: 600 !important;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	letter-spacing: 0 !important;
+}
+
+.tituloproj{
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+}
+
+.projetostit{
+	padding-bottom: 30px;
+}

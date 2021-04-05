@@ -1,0 +1,19 @@
+.container{
+    margin-top: 40px;
+    letter-spacing: .125rem;
+    font-family: Roboto, sans-serif !important;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.titulo{
+    padding-bottom: 30px;
+    font-weight: bold;
+    line-height: inherit;
+}
+.table{
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}

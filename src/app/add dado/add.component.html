@@ -1,0 +1,85 @@
+<div class="container text-center">
+  <h1 class="titulo">
+    Basis Ocean
+  </h1>
+  <h3 class="subtitulo">
+    Registrar Dado
+  </h3>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-2">Nome</label>
+        <input type="text" class="form-control" formControlName="nome" #nome />
+      </div>
+      <div *ngIf="angForm.controls['nome'].invalid && angForm.controls['nome'].touched" class="alert alert-danger">
+        <div *ngIf="angForm.controls['nome'].errors.required">
+          Nome é obrigatório.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-2">Fonte</label>
+        <input type="text" class="form-control" formControlName="fonte" #fonte />
+      </div>
+      <div *ngIf="angForm.controls['fonte'].invalid && angForm.controls['fonte'].touched" class="alert alert-danger">
+        <div *ngIf="angForm.controls['fonte'].errors.required">
+          Fonte é obrigatório.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-2">Tipo de Dado</label>
+        <input type="text" class="form-control" formControlName="tipo" #tipo />
+      </div>
+      <div *ngIf="angForm.controls['tipo'].invalid &&angForm.controls['tipo'].touched" class="alert alert-danger">
+        <div *ngIf="angForm.controls['tipo'].errors.required">
+          Tipo é obrigatório.
+        </div>
+      </div>
+	  <div class="form-group">
+        <label class="col-md-2">Natureza do Dado</label>
+        <input type="text" class="form-control" formControlName="natureza" #natureza />
+      </div>
+      <div *ngIf="angForm.controls['natureza'].invalid &&angForm.controls['natureza'].touched" class="alert alert-danger">
+        <div *ngIf="angForm.controls['natureza'].errors.required">
+          Natureza é obrigatório.
+        </div>
+      </div>
+	  <div class="form-group">
+        <label class="col-md-1">Data</label>
+        <input type="date" class="form-control" formControlName="dia" #data />
+      </div>
+      <div *ngIf="angForm.controls['dia'].invalid &&angForm.controls['dia'].touched" class="alert alert-danger">
+        <div *ngIf="angForm.controls['dia'].errors.required">
+          Data é obrigatório.
+        </div>
+      </div>
+	  <div class="form-group">
+        <label class="col-md-2">Descrição</label>
+        <input type="text" class="form-control" formControlName="descricao" #descricao />
+        
+      </div>
+      <div *ngIf="angForm.controls['descricao'].invalid &&angForm.controls['descricao'].touched" class="alert alert-danger">
+        <div *ngIf="angForm.controls['descricao'].errors.required">
+          Descrição é obrigatório.
+        </div>
+      </div>
+	  <div class="form-group">
+        <label class="col-md-1">Local</label>
+        <input type="text" class="form-control" formControlName="local" #local />
+      </div>
+      <div *ngIf="angForm.controls['local'].invalid &&angForm.controls['local'].touched" class="alert alert-danger">
+        <div *ngIf="angForm.controls['local'].errors.required">
+          Local é obrigatório.
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" 
+        (click)="addDado()"
+        [disabled]="angForm.pristine || angForm.invalid" 
+        class="btn btn-primary">Registrar Dado</button>
+      </div>
+    </form>
+  </div>
+</div>

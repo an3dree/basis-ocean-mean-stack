@@ -1,0 +1,76 @@
+<ng2-slim-loading-bar color="red"></ng2-slim-loading-bar>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary w-100">
+  <div class="container-fluid">
+    <a class="navbar-brand font-weight-bold" href="#">Basis Ocean</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item marg">
+              <a routerLink="/" class="nav-link" routerLinkActive="active">
+                Home
+              </a>
+            </li>
+            <li class="nav-item dropdown marg">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Acesso
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a routerLink="user/create" class="dropdown-item" routerLinkActive="active">
+                  Adicionar Usuário
+                </a>
+                
+                <a routerLink="user" class="dropdown-item" >
+                  Ver Usuários
+                </a>
+                <div class="dropdown-divider"></div>
+                <a routerLink="dado/create" class="dropdown-item" routerLinkActive="active">
+                  Adicionar Dados
+                </a>
+                
+                <a routerLink="dado" class="dropdown-item" routerLinkActive="active">
+                  Ver Dados
+                </a>
+              </div>
+            <li class="nav-item marg">
+              <a class="nav-link" href="#projs">Projetos</a>
+            </li>
+            <li class="nav-item marg">
+              <a class="nav-link" href="#sobr">Sobre Nós</a>
+            </li>
+            <li class="nav-item marg">
+              <a class="nav-link" href="#">Ajuda</a>
+            </li>
+            <!--
+            <li class="nav-item marg">
+              <a routerLink="user/create" class="nav-link" routerLinkActive="active">
+                Add New User
+              </a>
+            </li>
+            <li class="nav-item marg">
+              <a routerLink="user" class="nav-link" routerLinkActive="active">
+                Users
+              </a>
+            </li>
+            <li class="nav-item marg">
+              <a routerLink="dado/create" class="nav-link" routerLinkActive="active">
+                Adicionar Dado
+              </a>
+            </li>
+            <li class="nav-item marg">
+              <a routerLink="dado" class="nav-link" routerLinkActive="active">
+                Ver Dados
+              </a>
+            </li>
+            --> 
+          </ul>
+      </div>  
+  </div>
+</nav>
+
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>
+ 

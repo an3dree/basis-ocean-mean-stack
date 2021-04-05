@@ -1,0 +1,29 @@
+<div class="container text-center">
+    <h1 class="titulo">
+      Basis Ocean
+    </h1>
+    <h3 class="subtitulo">
+      Usuários Registrados
+    </h3>
+  </div>
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+      <td>Nome</td>
+      <td>Email</td>
+      <td>Celular</td>
+      <td colspan="2">Ações</td>
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr *ngFor="let user of users">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.phone_number }}</td>
+          <td><a [routerLink]="['edit', user._id]" class="btn btn-primary">Editar</a></td>
+          <td><a (click)="deleteUser(user._id)" class="btn btn-danger">Remover</a></td>
+      </tr>
+  </tbody>
+</table>

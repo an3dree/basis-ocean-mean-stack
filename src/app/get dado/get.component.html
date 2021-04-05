@@ -1,0 +1,38 @@
+<div class="container text-center">
+    <h1 class="titulo">
+      Basis Ocean
+    </h1>
+    <h3 class="subtitulo">
+      Dados Registrados
+    </h3>
+  </div>
+
+
+<table class="table table-hover">
+  <thead>
+  <tr>
+      <td>Nome</td>
+      <td>Fonte</td>
+      <td>Tipo</td>
+      <td>Natureza</td>
+      <td>Dia</td>
+      <td>Descrição</td>
+      <td>Local</td>
+      <td colspan="2">Ações</td>
+  </tr>
+  </thead>
+
+  <tbody>
+      <tr *ngFor="let dado of dados">
+          <td>{{ dado.nome }}</td>
+          <td>{{ dado.fonte }}</td>
+          <td>{{ dado.tipo }}</td>
+          <td>{{ dado.natureza }}</td>
+          <td>{{ dado.dia }}</td>
+          <td>{{ dado.descricao }}</td>
+          <td>{{ dado.local }}</td>
+          <td><a [routerLink]="['edit', dado._id]" class="btn btn-primary">Editar</a></td>
+          <td><a (click)="deleteDado(dado._id)" class="btn btn-danger">Remover</a></td>
+      </tr>
+  </tbody>
+</table>
